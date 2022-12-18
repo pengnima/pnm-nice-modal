@@ -1,0 +1,30 @@
+{
+  "name": "@pnm/pnm-modal",
+  "version": "0.0.5",
+  "module": "./dist/index.es.js",
+  "main": "./dist/index.umd.js",
+  "exports": {
+    ".": {
+      "import": "./dist/index.es.js",
+      "require": "./dist/index.umd.js"
+    }
+  },
+  "type": "module",
+  "author": "pengnima",
+  "license": "MIT",
+  "scripts": {
+    "dev": "vite build --mode development",
+    "build": "vite build --mode production",
+    "release": "yarn build & yarn publish",
+    "coverage": "vitest run --coverage"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^3.1.0",
+    "sass": "^1.57.0",
+    "typescript": "^4.6.4",
+    "vite": "^3.1.0"
+  },
+  "dependencies": {
+    "vue": "^3.2.45"
+  }
+}
